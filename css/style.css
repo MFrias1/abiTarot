@@ -1,0 +1,193 @@
+
+/* Variables */
+:root {
+  --color-bg: #0e1324;
+  --color-text: #efeaff;
+  --color-accent: #D4AF37;
+  --color-surface: #140b25;
+  --color-night: #0d0818;
+
+  --font-heading: "Cinzel", serif;
+  --font-body: "Montserrat", sans-serif;
+}
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*global*/
+* {
+  /* Elimina el espacio por defecto alrededor del <body> y de los elementos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-image: 
+    radial-gradient(circle at 50% -20%, rgba(53, 26, 94, 0.733) 0%, transparent 60%),
+    radial-gradient(circle at 50% -5%, rgba(207, 169, 45, 0.274) 0%, transparent 30%),
+    linear-gradient(to bottom, #07050d, #0d0818 50%, #07050d);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    /*background-color: #924d4d;*/
+}
+.bienvenida-texto {
+    height: auto;
+    margin: 0 auto;
+    color: var(--color-accent);
+}
+.bienvenida-texto h2 {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    margin-bottom: none;
+}
+.bienvenida-texto p {
+    font-size: 1.2rem;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*background-color: red;*/
+}
+.contenido article {
+    border: 1px solid #2A2045;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.1);
+    background: var(--color-surface);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 60%;
+    height: 700px;
+    justify-content: center;
+    align-content:left;
+}
+.contenido article:hover {
+  border-color: rgba(150, 67, 19, 0.45);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 12px rgba(212, 175, 55, 0.1);
+}
+.pago {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: justify;
+    height: 100px;
+    width: calc(100% - 5px);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    background-color: var(--color-night);
+}
+.medio-pago-titulo p {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.contenido-titulo{
+    height: 50px;
+    gap: 10px;
+    font-family: var(--font-heading);
+}
+.referente {
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-color: var(--color-surface);
+    padding-top: 20px;
+}
+.referente h3 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+}
+.referente-articulos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    /*background-color: var(--color-accent);*/
+    text-align: left;
+    height: 150px;
+    width: 100%;
+}
+footer section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align:left;
+    height: 100%;
+    width: 100%;
+}
+.agenda-button {
+    background-color: #997d26;
+    color: var(--color-text);
+    border: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.redes div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.redes div span {
+   justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 5px;
+    padding-inline: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #997d26;
+}
+.redes-iconos img{
+    margin-inline-end:5px;
+    height: 20px;
+    width: 20px;
+}
+.footer-title{
+    font-family: var(--font-heading);
+}
